@@ -1,0 +1,3 @@
+/home/mofg/camtest/yolov5/CMakeFiles/yolov5.dir
+/home/mofg/camtest/yolov5/CMakeFiles/edit_cache.dir
+/home/mofg/camtest/yolov5/CMakeFiles/rebuild_cache.dir
