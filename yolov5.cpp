@@ -160,8 +160,12 @@ int main()
     //frame2 = imread("sample.jpg");
     // Load model.
     Net net;
-    net = readNet("yolov5m.onnx"); 
+    net = readNet("yolov5m.onnx");
+    String cam_pipeline_str;
+    cam_pipeline_str = 'nvarguscamerasrc sensor-id=0 ! video/x-raw(memory:NVMM),format=NV12,width=1280,height=720,framerate=30/1 ! nvvidconv ! video/x-raw,format=BGRx ! videoconvert ! video/x-raw,format=BGR ! appsink drop=1';
     VideoCapture cap;
+    cap = cv.VideoCapture(cam_pipeline_str, cv.CAP_GSTREAMER);
+    // VideoCapture cap;
     // open the default camera using default API
     // cap.open(0);
     // OR advance usage: select any API backend
@@ -169,6 +173,7 @@ int main()
     int apiID = cv::CAP_ANY;      // 0 = autodetect default API
     // open selected camera using selected API
     cap.open(deviceID, apiID);
+    cap.set(cv.CAP_PROP_FOURCC, cv.VideoWriter_fourcc('M', 'J', 'P', 'G'))
     // check if we succeeded
     if (!cap.isOpened()) {
         cerr << "ERROR! Unable to open camera\n";

@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/main.dir/yolov5.cpp.o"
-  "CMakeFiles/main.dir/yolov5.cpp.o.d"
-  "main"
   "main.pdb"
+  "main"
 )
 
 # Per-language clean rules from dependency scanning.
