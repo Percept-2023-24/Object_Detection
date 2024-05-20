@@ -1,5 +1,8 @@
 # Object_Detection
 Yolov5-opencv
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Install libgtk2.0-dev and pkg-config before build opencv!(Setup)
+
 # OPENCV build tip: Follow this tutorial: https://qengineering.eu/install-opencv-on-jetson-nano.html
 Reason: Jetson Nano has a 4 GB Ram, which is not enough to support the build process.
 # How to use:
