@@ -1,5 +1,7 @@
 # Object_Detection
 Yolov5-opencv
+# Password
+Jetson Orin Nano password: percept
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 Install libgtk2.0-dev and pkg-config before build opencv!(Setup)
 
